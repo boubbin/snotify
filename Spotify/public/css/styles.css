@@ -1,0 +1,99 @@
+@CHARSET "UTF-8";
+a, a:ACTIVE, a:VISITED, a:HOVER { 
+	//background-color:#e0f2c2;
+	color:#fff;
+	text-decoration: none;	
+}
+body {
+	margin: 0 auto;
+	padding: 0;
+	background-color: #80B719;
+	font: 14px/18px helvetica,arial,"nimbus sans l",sans-serif;
+}
+p {
+	margin: 0 auto;
+}
+
+#wrapper {
+	position: relative;
+	width: 100%;
+	left: 0;
+	top: 0;
+}
+
+#upper_header {
+	position: absolute;
+	z-index:-2;
+	top: -50px;
+	width: 100%;
+	height: 310px;
+	background-image: url('../images/spotify_upper_bg.png');
+	background-position: center;
+	background-color: #80b719;
+	background-repeat: no-repeat;
+}
+#lower_header {
+	position: absolute;
+	z-index:-2;
+	top: 260px;
+	width: 100%;
+	height: 450px;
+	background-image: url('../images/spotify_lower_bg.png');
+	background-position: top center;
+	background-color: #0c0c0c;
+	background-repeat: no-repeat;
+}
+#page-wrapper {
+	position: relative;
+	top: 280px;
+	margin-left: auto;
+    margin-right: auto;
+	width: 1000px;
+	height: 450px;
+	color: white;
+}
+#info-bar {
+	padding: 7px;	
+}
+#header-bar {
+	padding: 7px;
+}
+#side-bar {
+	width: 150px;
+	height: 400px;
+	position: relative;
+	float: left;
+	color:black;
+}
+#page-content {
+	margin-left: 16%;
+	padding: 10px;
+	width: 80%;
+	font-family: sans-serif;
+	color: black;
+	font-size: 10px;
+	background-color: white;
+	line-height: 15px;
+}
+#side-bar ul, #side-bar li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: url('../images/button.png') no-repeat left bottom;
+	line-height: 38px;
+	text-align: center;
+}
+
+#sidebar ul.menu {
+	position: absolute;
+	left: 86px;
+	top: 39px;
+	width: 894px;
+	border: 1px solid #1E1E1E;
+	z-index: 3;
+	font-size: 13px;
+	background-position: 0 0;
+}
+#sidebar ul.menu li {
+	float: left;
+}
