@@ -1,0 +1,29 @@
+<?php echo $this->doctype() ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<?php echo $this->headTitle(": SN : Spotify Notify :") ?>
+	<?php echo $this->headLink()->appendStylesheet('/css/styles.css') ?>
+</head>
+<body>
+<div id="wrapper">
+	<div id="upper_header"></div>
+	<div id="lower_header"></div>
+	<div id="page-wrapper">
+		<div id="info-bar">Welcome to the page! (This bar holds nfo about users last action)</div>
+		<div id="header-bar"><a href="#">Link1</a> <a href="#">Link2</a> <a href="#">Link3</a> (This bar is for navigation)</div>
+		<div id="side-bar">
+			<ul class="menu">
+				<a href=<?php echo $this->url(array('controller' => 'song', 'action' => 'add'), 'default', true) ?>><li>Add new Song</li></a>
+				<a href=<?php echo $this->url(array('controller' => 'notification'), 'default', true) ?>><li>My Notifications</li></a>
+				<a href=<?php echo $this->url(array('controller' => 'user'), 'default', true) ?>><li>Profile</li></a>
+				<a href=<?php echo $this->url(array('controller' => 'rock'), 'default', true) ?>><li>Rock N Roll</li></a>	
+			</ul>
+		</div>
+		<div id="page-content">
+			<?php echo $this->layout()->content; ?>
+		</div>	
+	</div>
+</div>
+</body>
+</html>
